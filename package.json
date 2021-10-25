@@ -1,0 +1,22 @@
+{
+  "name": "spacex",
+  "version": "1.0.0",
+  "description": "this prosjekt from bootcamp on api",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nexnic/Spacex.git"
+  },
+  "author": "Kent Erik Hole",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nexnic/Spacex/issues"
+  },
+  "homepage": "https://github.com/nexnic/Spacex#readme",
+  "devDependencies": {
+    "node-sass": "^6.0.1"
+  }
+}
