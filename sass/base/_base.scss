@@ -1,0 +1,14 @@
+//this is for resetting page 
+*,
+*::after , 
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    //this is for resett browser to 1rem is font-size
+    font-size: 62.5%;
+}
+
