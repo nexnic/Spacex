@@ -12,5 +12,11 @@ nav {
     height: 8rem;
     width: 100%;
     top: 5%;
+}
+
+.img__logo {
+    position: relative;
+    animation-name: moveInLeft;
+    animation: 3s ease-in;
 
 }
