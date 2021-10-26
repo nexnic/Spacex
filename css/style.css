@@ -1,3 +1,17 @@
+@keyframes moveInLeft {
+  0% {
+    transform: translateY(-15rem);
+    opacity: 0; }
+  60% {
+    opacity: 1;
+    transform: translateY(-1rem); }
+  80% {
+    opacity: 1;
+    transform: translateY(1rem); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
 *,
 *::after,
 *::before {
@@ -15,6 +29,9 @@ body {
   font-family: 'Roboto';
   src: url(assets/font/Roboto-Regular.ttf) format("truetype"); }
 
+.btn:link, .btn:visited {
+  text-decoration: none; }
+
 header {
   background-image: url(../../assets/img/earth-g09371b435_1920.jpg);
   background-position: top;
@@ -28,3 +45,8 @@ nav {
   height: 8rem;
   width: 100%;
   top: 5%; }
+
+.img__logo {
+  position: relative;
+  animation-name: moveInLeft;
+  animation: 3s ease-in; }
