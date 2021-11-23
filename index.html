@@ -1,69 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Page about spacex" />
+    <meta name="keywords" content="SpaceX,api" />
+    <meta name="author" content="Kent Erik Hole" />
+    <script
+      src="https://kit.fontawesome.com/1d04c2db3e.js"
+      crossorigin="anonymous"
+    ></script>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Page about spacex">
-    <meta name="keywords" content="SpaceX,api">
-    <meta name="author" content="Kent Erik Hole">
-    <script src="https://kit.fontawesome.com/1d04c2db3e.js" crossorigin="anonymous"></script>
-
-    <link rel="icon" href="./assets/img/logo/Component 1(1).png">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" href="./assets/img/logo/Component 1(1).png" />
+    <link rel="stylesheet" href="/css/style.css" />
     <title>Document</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav>
-            <div class="navigation">
-                <div class="navigation__Logo">
-                    <img src="./assets/img/logo/logo.png" alt="Logo" class="logo-img">
-                </div>
-                <div class="navigation__menu">
-                    <ul>
-                        <il><a href="/index.html" class="link">Home</a></il>
-                        <il><a href="#" class="link">About us</a></il>
-                        <il><a href="./pages/crew.html" class="link">Crew</a></il>
-                        <il><a href="#" class="link" onclick="openForm()">Contact Us</a></il>
-
-
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <div class="form-popup" id="myForm">
-            <form action="contactMe" class="form-contaner">
-                <h1>Login</h1>
-                <label for="psw"><b>Name</b></label>
-                <input type="name" placeholder="Name" name="psw" required>
-                <label for="email"><b>Email</b></label>
-                <input type="text" placeholder="Enter Email" name="email" required>
-                <button type="submit" class="btn">submit</button>
-                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-            </form>
+      <nav>
+        <div class="navigation">
+          <div class="navigation__Logo">
+            <img src="./assets/img/logo/logo.png" alt="Logo" class="logo-img" />
+          </div>
+          <div class="navigation__menu">
+            <ul>
+              <il><a href="/index.html" class="link">Home</a></il>
+              <il><a href="#" class="link">About us</a></il>
+              <il><a href="./pages/crew.html" class="link">Crew</a></il>
+              <il
+                ><a href="#" class="link" onclick="openForm()"
+                  >Contact Us</a
+                ></il
+              >
+            </ul>
+          </div>
         </div>
-        <div class="text_box">
-
-        </div>
-
+      </nav>
+      <div class="form-popup" id="myForm">
+        <form action="contactMe" class="form-contaner">
+          <h1>Login</h1>
+          <label for="psw"><b>Name</b></label>
+          <input type="name" placeholder="Name" name="psw" required />
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" name="email" required />
+          <button type="submit" class="btn">submit</button>
+          <button type="button" class="btn cancel" onclick="closeForm()">
+            Close
+          </button>
+        </form>
+      </div>
+      <div class="text_box"></div>
     </header>
     <main>
-        <section class="mid_index">
-            <div class="launches">
-
-            </div>
-        </section>
+      <section class="mid_index">
+        <div class="launches"></div>
+      </section>
     </main>
-    <footer>
-
-    </footer>
+    <footer></footer>
     <script src="/script/api.js"></script>
     <script src="/script/forum.js"></script>
-
-
-</body>
-
+  </body>
 </html>
