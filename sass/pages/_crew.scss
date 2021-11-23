@@ -1,0 +1,27 @@
+.mid_crew {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-black, 0.8), 
+        rgba($color-black, 0.8)),
+    url(../../assets/img/spacex-3.jpg);
+    height: 60vh;
+    width: 100%;
+}
+
+.crew--information {
+    display: flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:2 rem;
+    justify-content: center;
+
+} 
+
+.item-crew {
+    width: 30rem;
+    height: 30rem;
+}
+.crew-img {
+    width: 100%;
+}

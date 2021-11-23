@@ -1,22 +1,64 @@
 header {
-    background-image: url(../../assets/img/earth-g09371b435_1920.jpg);
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-black, 0.8), 
+        rgba($color-black, 0.8)),
+    url(../../assets/img/earth-g09371b435_1920.jpg);
     background-position: top;
     background-size: cover;
     height: 75vh;
     width: 100%;
+    
+    
 }
 
 nav {
+
     position: absolute;
-    background-color: rgba($color-primary-sub,.6);
-    height: 8rem;
-    width: 100%;
     top: 5%;
+    width: 100%;
+    
+    
 }
 
-.img__logo {
-    position: relative;
-    animation-name: moveInLeft;
-    animation: 3s ease-in;
+.navigation {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: inherit;
+    align-items: baseline;
+    justify-content: space-between;
+    
+    
 
+    &__Logo {
+        padding-left: 4rem;
+    }
+
+    &__menu {
+        padding-right: 4rem;
+    }
+
+    
+}
+
+.logo-img {
+    width: 40rem;
+}
+
+.text_box {
+   display: flex;
+   width: 50%;
+   flex-direction: column;
+   position: relative;
+   top: 30%;
+   left: 50%;
+   transform: translateX(-50%);
+   align-items: center;
+   align-content: center;
+   
+
+   &-p {
+       width: 50%;
+   }
 }

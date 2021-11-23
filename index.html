@@ -9,6 +9,7 @@
     <meta name="keywords" content="SpaceX,api">
     <meta name="author" content="Kent Erik Hole">
     <script src="https://kit.fontawesome.com/1d04c2db3e.js" crossorigin="anonymous"></script>
+
     <link rel="icon" href="./assets/img/logo/Component 1(1).png">
     <link rel="stylesheet" href="/css/style.css">
     <title>Document</title>
@@ -17,29 +18,52 @@
 <body>
     <header>
         <nav>
-            <div class="nav__logo">
-                <il><img src="./assets/img/logo/Component 2(2).png" alt="Bilde av logo" class="img__logo"></il>
+            <div class="navigation">
+                <div class="navigation__Logo">
+                    <img src="./assets/img/logo/logo.png" alt="Logo" class="logo-img">
+                </div>
+                <div class="navigation__menu">
+                    <ul>
+                        <il><a href="/index.html" class="link">Home</a></il>
+                        <il><a href="#" class="link">About us</a></il>
+                        <il><a href="./pages/crew.html" class="link">Crew</a></il>
+                        <il><a href="#" class="link" onclick="openForm()">Contact Us</a></il>
+
+
+                    </ul>
+                </div>
             </div>
-            <ul class="nav__meny">
-                <il><a href="#" class="btn">Home</a></il>
-                <il><a href="#" class="btn">about us</a></il>
-                <il><a href="#" class="btn">contact us</a></il>
-                <il>
-                    <a href="#" class="btn" id="crewSite">crew</a>
-                </il>
-            </ul>
         </nav>
-    </header>
-    <main>
-        <section class="information"></section>
-        <div class="box__completed">
+        <div class="form-popup" id="myForm">
+            <form action="contactMe" class="form-contaner">
+                <h1>Login</h1>
+                <label for="psw"><b>Name</b></label>
+                <input type="name" placeholder="Name" name="psw" required>
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" required>
+                <button type="submit" class="btn">submit</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+        </div>
+        <div class="text_box">
 
         </div>
+
+    </header>
+    <main>
+        <section class="mid_index">
+            <div class="launches">
+
+            </div>
+        </section>
     </main>
     <footer>
 
     </footer>
-    <script src="/js/apicall.js"></script>
+    <script src="/script/api.js"></script>
+    <script src="/script/forum.js"></script>
+
+
 </body>
 
 </html>

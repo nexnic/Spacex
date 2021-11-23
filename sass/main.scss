@@ -14,10 +14,12 @@
 //components 
 
 @import "components/button";
-
+@import "components/launches";
+@import "components/form";
 //layout
 
 @import "layout/header";
 
 //pages
 @import "pages/home";
+@import "pages/crew";
