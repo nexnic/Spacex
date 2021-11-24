@@ -17,12 +17,6 @@ async function apiCall(url) {
   } else if (url == urlL) {
     for (let i = 0; i <= result.length; i++) {
       if ((result[i].success = true && result[i].details != null)) {
-        console.log(`${result[i].name}`);
-        console.log(`${result[i].links.patch.small}`);
-        console.log(`${result[i].details}`);
-        console.log(`${result[i].links.wikipedia}`);
-        console.log(`${result[i].links.webcast}`);
-
         midPageContainer.innerHTML += ` 
         <div class="launche">
             <div class="launche__header">
@@ -35,10 +29,18 @@ async function apiCall(url) {
                  <p>${result[i].details}</p>
                  <ul class="launche__list">
                     <il>
-                        <a class="btn btn__launche" href="${result[i].links.webcast}" alt="link to youtube">
+                        <a class="btn " href="${result[i].links.webcast}" target="popup"
+                        onclick="window.open('${result[i].links.webcast}','popup','width=600,height=600'); return false;"
+                        alt="link to youtube">
+                            <i class="fab fa-youtube"></i>
+                        </a
                     </il>
                     <il>
-                        <a class="btn btn__launche" href="${result[i].links.wikipedia}" alt="link to youtube">
+                    <a class="btn " href="${result[i].links.wikipedia}" target="popup"
+                    onclick="window.open('${result[i].links.wikipedia}','popup','width=600,height=600'); return false;"
+                    alt="link to youtube">
+                            <i class="fab fa-wikipedia-w"></i>
+                        </a>
                     </il>
                  </ul>
             </div>
@@ -47,8 +49,18 @@ async function apiCall(url) {
         `;
       }
     }
+  } else if (url == urlL) {
+    for (let i = 0; i <= result.length; i++) {
+      if (
+        result[i].cores.reused == true &&
+        result[i].cores.landing_attempt == true &&
+        result[i].cores.landing_success == true
+      ) {
+      }
+    }
   }
 }
 
 apiCall(urlC);
+apiCall(urlL);
 apiCall(urlL);

@@ -1,32 +1,11 @@
 .btn {
-    &:link,
-    &:visited {
-        text-decoration: none;
-
-    }
-}
-
-.link {
-    &:link,
-    &:visited {
-        text-decoration: none;
-        text-transform: uppercase;
-        font-size: 3rem;
-        color:$color-white;
-        padding: 1rem;
-
-       
-    }
-
-    &:hover {
-        color: $color-gray;
-    }
-}
-
-.links {
-    &:link,
-    &:visited {
-        text-decoration: none;
-        color:$color-white;
-    }
+  &:link,
+  &:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 10rem;
+    position: relative;
+    color: white;
+  }
 }

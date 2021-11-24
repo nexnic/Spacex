@@ -30,13 +30,19 @@ h2 {
   color: white;
   font-size: 4rem;
   text-transform: uppercase;
-  letter-spacing: .4rem; }
+  letter-spacing: 0.4rem; }
 
 h3 {
   color: white;
   font-size: 3.5rem;
   text-transform: uppercase;
-  letter-spacing: .4rem; }
+  letter-spacing: 0.4rem; }
+
+h4 {
+  color: white;
+  font-size: 2.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.4rem; }
 
 p {
   color: white;
@@ -46,27 +52,23 @@ p {
   text-align: justify;
   text-justify: inter-word; }
 
+.fab {
+  font-size: 4rem;
+  padding: 2rem; }
+
 .btn:link, .btn:visited {
-  text-decoration: none; }
-
-.link:link, .link:visited {
-  text-decoration: none;
   text-transform: uppercase;
-  font-size: 3rem;
-  color: white;
-  padding: 1rem; }
-
-.link:hover {
-  color: #f2f2f2; }
-
-.links:link, .links:visited {
   text-decoration: none;
+  display: inline-block;
+  border-radius: 10rem;
+  position: relative;
   color: white; }
 
 .launches {
   overflow-y: scroll;
   height: 40rem;
-  width: 40rem; }
+  width: 40rem;
+  text-align: center; }
 
 .launche {
   display: flex;
@@ -124,7 +126,7 @@ header {
   background-image: linear-gradient(to right bottom, rgba(18, 18, 18, 0.8), rgba(18, 18, 18, 0.8)), url(../../assets/img/earth-g09371b435_1920.jpg);
   background-position: top;
   background-size: cover;
-  height: 75vh;
+  height: 40vh;
   width: 100%; }
 
 nav {
