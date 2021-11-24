@@ -9,3 +9,10 @@
     color: white;
   }
 }
+
+.fab {
+  &:hover {
+    color: $color-gray;
+    transform: scale(1.5);
+  }
+}

@@ -126,11 +126,9 @@ async function api(url) {
       result[i].links.patch.small != null
     ) {
       console.log(result[i].name);
-      console.log([timeZone(result[i].launch_date_utc)]);
+      console.log([convert_launch_date(result[i].launch_date_unix)]);
       console.log(result[i].links.patch.small);
-      convert_launch_date();
       //console.log([CountDown(result[i].date_utc)]);
-      let time = timeZone(result[i].launch_date_local);
 
       launchesUpcoming.innerHTML += ` 
         <div class="launche">
