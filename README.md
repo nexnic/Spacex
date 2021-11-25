@@ -44,3 +44,42 @@ if you can sass use it
 5. Use the SpaceX apie
 6. Make sure you keep the syntax correct
 7. Have a neat code, use prettier
+
+# First time setup
+
+install Node from https://nodejs.org/en/
+Node ver (16.13.0 LST)
+after install it test it in comandline windows (node.js), linux (terminal).
+§npm version
+
+1.  §npm init
+2.  §name: spacex
+3.  §version (1.0.0)
+4.  §description: landing page spaxc.
+5.  §entry point (index.js)
+6.  §test command: §
+7.  §keyword: §
+8.  §author: name of developer/ team
+9.  §licensen: (ISC)
+10. §is this ok? (yes)
+    #Now need to install sass and live-server
+
+11. §npm install node-sass -save-dev
+    Note from developer: it's importen to save as dev disse is note online yet.
+12. §npm install -g live-server
+    Note from developer: if you have any problem install use google or ask.
+
+Now need to edit (package.json)
+
+1. line 6 "scripts"
+   "scripts": {
+   "compile:sass": "node-sass sass/main.scss css/style.css -w"
+   },
+
+Now we are ready to start code
+
+You download need to change code
+Need to update npm node-sass
+
+1.  §npm update
+    Note from developer: disse code update from paceage.json file download node-sass folder. if you have any problem ask og check google.com.
