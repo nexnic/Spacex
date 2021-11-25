@@ -1,11 +1,7 @@
-.btn {
+a {
   &:link,
   &:visited {
-    text-transform: uppercase;
+    color: $color-white;
     text-decoration: none;
-    display: inline-block;
-    border-radius: 10rem;
-    position: relative;
-    color: white;
   }
 }

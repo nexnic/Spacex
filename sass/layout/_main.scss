@@ -1,0 +1,19 @@
+.main {
+  flex: 70%;
+  background-color: #121212;
+  padding: 20px;
+}
+
+.main__flex {
+  display: flex;
+  padding: 20px;
+  background-color: #121212;
+  flex: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}

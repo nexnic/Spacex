@@ -14,7 +14,7 @@
       src="https://kit.fontawesome.com/1d04c2db3e.js"
       crossorigin="anonymous"
     ></script>
-    <title>SpaceX | Home</title>
+    <title>SpaceX | Launches</title>
   </head>
   <body>
     <!-- Header -->
@@ -32,40 +32,18 @@
       <a href="./launches.html">Launches</a>
       <a href="./contack.html">Contact</a>
     </div>
-    <!-- The flexible grid (content) -->
     <div class="row">
       <div class="side">
-        <h2>Starlink Mission</h2>
-        <iframe
-          width="300"
-          height="213"
-          src="https://www.youtube.com/embed/AtmtP4vouSY"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-        <p>
-          On Saturday, November 13 at 7:19 a.m. EST, Falcon 9 launched 53
-          Starlink satellites to orbit from Space Launch Complex 40 (SLC-40) at
-          Cape Canaveral Space Force Station in Florida. This was the ninth
-          launch and landing of this Falcon 9 first stage booster, which
-          previously launched Crew Demo-2, ANASIS-11, CRS-21, Transporter-1, and
-          now five Starlink missions.
-        </p>
+        <h2>Launches success</h2>
+        <div class="launches__cores"></div>
       </div>
-      <div class="main">
-        <h2>Find your future</h2>
-        <p>
-          SpaceX is looking for world-class talent ready to tackle challenging
-          projects that will ultimately enable life on other planets. We are an
-          equal opportunity employer offering competitive salaries,
-          comprehensive health benefits and equity packages.
-        </p>
-        <br />
-        <br />
-        <h2>Meet Crew</h2>
-        <div class="crew"></div>
+      <div class="side">
+        <h2>Launches upcoming</h2>
+        <div class="launches__upcoming"></div>
+      </div>
+      <div class="side">
+        <h2>Launches Fail</h2>
+        <div class="launches__fail"></div>
       </div>
     </div>
     <!-- Footer -->
@@ -93,7 +71,6 @@
         <a href="https://fontawesome.com/">fontawesome.com</a>
       </p>
     </div>
-    <script src="./script/apiindex.js"></script>
     <script src="./script/api.js"></script>
   </body>
 </html>

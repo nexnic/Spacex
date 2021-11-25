@@ -1,19 +1,30 @@
-.launches {
-  overflow-y: scroll;
-  height: 40rem;
-  width: 40rem;
+.launches__upcoming {
+  height: 45rem;
+  flex: 30%;
   text-align: center;
+  overflow-y: scroll;
+}
+
+.launches__cores {
+  height: 45rem;
+  flex: 30%;
+  text-align: center;
+  overflow-y: scroll;
+}
+
+.launches__fail {
+  height: 45rem;
+  flex: 30%;
+  text-align: center;
+  overflow-y: scroll;
 }
 
 .launche {
   display: flex;
   flex-direction: column;
-  width: 30rem;
-  justify-content: center;
   text-align: center;
   padding: 3rem;
-  border: 1rem solid $color-black;
-  background-color: $color-secondary;
+  border: 1rem solid $color-secondary;
 
   &__img {
     width: 40%;

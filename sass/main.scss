@@ -1,4 +1,4 @@
-//Abstract 
+//Abstract
 
 @import "abstracts/functions";
 @import "abstracts/mixins";
@@ -11,15 +11,19 @@
 @import "base/typography";
 @import "base/utillties";
 
-//components 
+//components
 
 @import "components/button";
 @import "components/launches";
 @import "components/form";
+
+@import "components/img";
+@import "components/crew";
+
 //layout
 
 @import "layout/header";
-
-//pages
-@import "pages/home";
-@import "pages/crew";
+@import "layout/nav";
+@import "layout/main";
+@import "layout/sidebar";
+@import "layout/footer";
